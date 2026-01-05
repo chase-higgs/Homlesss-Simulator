@@ -1,4 +1,3 @@
---Waist Rotation
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local Observers = require(ReplicatedStorage.Packages.Observers)
