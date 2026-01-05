@@ -1,4 +1,3 @@
---Stamina
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local CharacterPhysicsControllerLoader = require(ReplicatedStorage.Shared.CharacterPhysicsControllerLoader)
