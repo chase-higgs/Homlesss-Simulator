@@ -1,8 +1,8 @@
 local InsertService = game:GetService("InsertService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Accessories = require(script.Accessories)
-local Faces = require(script.Faces)
-local SkinColor = require(script.SkinColor)
+local Accessories = require(script.Parent.Accessories)
+local Faces = require(script.Parent.Faces)
+local SkinColor = require(script.Parent.SkinColor)
 local rf: RemoteFunction = ReplicatedStorage:WaitForChild("rf")
 
 local rig = workspace:WaitForChild("Rig")

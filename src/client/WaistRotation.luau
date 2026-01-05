@@ -10,7 +10,7 @@ local WaistRotation = {}
 Observers.observeLocalCharacter(function(character: Model)
 	print("character loaded")
 	
-	rf:InvokeServer()
+	rf:InvokeServer() --invoke before doing character animations
 
 	local root = character.PrimaryPart
 
