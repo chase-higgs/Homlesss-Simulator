@@ -2,6 +2,7 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local UserInputService = game:GetService("UserInputService")
 
+local guiRoot = require(script.Parent.guiRoot)
 local React = require(ReplicatedStorage.Packages.React)
 local ReactRoblox = require(ReplicatedStorage.Packages.ReactRoblox)
 
@@ -71,6 +72,11 @@ local function App()
 end
 
 local root = ReactRoblox.createRoot(Instance.new("Folder"))
+
+local root2 = ReactRoblox.createRoot(Instance.new("Folder"))
+
 root:render(ReactRoblox.createPortal(e(App), Players.LocalPlayer.PlayerGui))
+
+root2:render(ReactRoblox.createPortal(e(guiRoot), Players.LocalPlayer.PlayerGui))
 
 return GUI
